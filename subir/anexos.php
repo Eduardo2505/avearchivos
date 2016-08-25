@@ -102,7 +102,7 @@ $_SESSION["idregistro"] = $idreg;
                                 flash_swf_url: '../js/Moxie.swf',
                                 silverlight_xap_url: '../js/Moxie.xap',
                                 filters: {
-                                    max_file_size: '100mb',
+                                    max_file_size: '40mb',
                                     mime_types: [
                                         {title: "Image files", extensions: "jpg,gif,png,pdf,xls,xlsx,xlsm,dwg"},
                                         {title: "Zip files", extensions: "zip"}
@@ -168,7 +168,7 @@ $_SESSION["idregistro"] = $idreg;
                                 <tbody>
 
                                     <?php
-                                    $sql = "SELECT * FROM archivos";
+                                    $sql = "SELECT * FROM archivos where idRegistro='".$idreg."'";
                                     $result = $conn->query($sql);
 
                                     if ($result->num_rows > 0) {

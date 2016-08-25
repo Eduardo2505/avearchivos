@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "carritoe_root";
-$password = "Eduardo25%";
+$username = "root";
+$password = "seiter";
 $dbname = "carritoe_ave_archivos";
 
 // Create connection
