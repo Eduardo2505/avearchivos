@@ -9,6 +9,7 @@ include 'conexion.php';
 <?php
 // Set session variables
 $idreg = $_GET["idregistro"];
+$op = $_GET["op"];
 $_SESSION["idregistro"] = $idreg;
 ?>
 
@@ -34,28 +35,65 @@ $_SESSION["idregistro"] = $idreg;
             <div class="row">                   
                 <div class="col-md-12">
 
-                    <nav class="navbar brb" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                <span class="sr-only">Navegador</span>
-                                <span class="icon-reorder"></span>                            
-                            </button>                                                
-                            <a class="navbar-brand" href="http://helpmex.com.mx/Ave/solicitudes/mostrar"><img src="img/logo.png"/></a>                                                                                     
-                        </div>
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
-                            <ul class="nav navbar-nav">
-                                <li>
-                                    <a href="http://helpmex.com.mx/Ave/solicitudes/mostrar">
-                                        <span class="icon-home"></span> Regresar
-                                    </a>
-                                </li>                            
+                    <?php
+                    if (strcmp($op, "admin") == 0) {
+                        ?>
+                        <nav class="navbar brb" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Navegador</span>
+                                    <span class="icon-reorder"></span>                            
+                                </button>        
+
+                                <a class="navbar-brand" href="http://helpmex.com.mx/Ave/solicitudes/mostrar"><img src="img/logo.png"/></a>                                                                                     
+                            </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="http://helpmex.com.mx/Ave/solicitudes/mostrar">
+                                            <span class="icon-home"></span> Regresar
+                                        </a>
+                                    </li>                            
 
 
 
-                            </ul>
+                                </ul>
 
-                        </div>
-                    </nav>               
+                            </div>
+                        </nav> 
+                        <?php
+                    } else {
+                        ?>
+                        <nav class="navbar brb" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Navegador</span>
+                                    <span class="icon-reorder"></span>                            
+                                </button>        
+
+                                <a class="navbar-brand" href="http://helpmex.com.mx/Ave/registro"><img src="img/logo.png"/></a>                                                                                     
+                            </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="http://helpmex.com.mx/Ave/Ave/registro">
+                                            <span class="icon-home"></span> Regresar
+                                        </a>
+                                    </li>                            
+
+
+
+                                </ul>
+
+                            </div>
+                        </nav> 
+
+
+                        <?php
+                    }
+                    ?>
+
+
 
                 </div>            
             </div>
@@ -88,6 +126,9 @@ $_SESSION["idregistro"] = $idreg;
                             <a id="pickfiles" href="javascript:;" class="btn btn-success">Seleccione Archivos</a> 
                             <a id="uploadfiles" href="javascript:;" class="btn btn-default">Subir Archivos</a>
                         </div>  
+
+
+                        <a href="http://helpmex.com.mx/Ave/registro/actualizarFecha?idregistro=<?php echo $idreg ?>" class="btn btn-info">CERRAR</a>
 
 
 
@@ -131,7 +172,7 @@ $_SESSION["idregistro"] = $idreg;
                                         document.getElementById('console').appendChild(document.createTextNode("\nError #" + err.code + ": " + err.message));
                                     },
                                     UploadComplete: function(up, files) {
-                                         location.reload();
+                                        location.reload();
                                     }
 
 
@@ -139,7 +180,7 @@ $_SESSION["idregistro"] = $idreg;
 
 
                             });
-                        
+
 
                             uploader.init();
 
@@ -168,7 +209,7 @@ $_SESSION["idregistro"] = $idreg;
                                 <tbody>
 
                                     <?php
-                                    $sql = "SELECT * FROM archivos where idRegistro='".$idreg."'";
+                                    $sql = "SELECT * FROM archivos where idRegistro='" . $idreg . "'";
                                     $result = $conn->query($sql);
 
                                     if ($result->num_rows > 0) {
