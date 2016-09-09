@@ -11,6 +11,9 @@ include 'conexion.php';
 $idreg = $_GET["idregistro"];
 $op = $_GET["op"];
 $_SESSION["idregistro"] = $idreg;
+
+$url="http://localhost/";
+//$url="http://helpmex.com.mx/";
 ?>
 
 <!DOCTYPE html>
@@ -45,12 +48,12 @@ $_SESSION["idregistro"] = $idreg;
                                     <span class="icon-reorder"></span>                            
                                 </button>        
 
-                                <a class="navbar-brand" href="http://helpmex.com.mx/Ave/solicitudes/mostrar"><img src="img/logo.png"/></a>                                                                                     
+                                <a class="navbar-brand" href="<?php echo $url?>Ave/solicitudes/mostrar"><img src="img/logo.png"/></a>                                                                                     
                             </div>
                             <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
                                 <ul class="nav navbar-nav">
                                     <li>
-                                        <a href="http://helpmex.com.mx/Ave/solicitudes/mostrar">
+                                        <a href="<?php echo $url?>Ave/solicitudes/mostrar">
                                             <span class="icon-home"></span> Regresar
                                         </a>
                                     </li>                            
@@ -71,12 +74,12 @@ $_SESSION["idregistro"] = $idreg;
                                     <span class="icon-reorder"></span>                            
                                 </button>        
 
-                                <a class="navbar-brand" href="http://helpmex.com.mx/Ave/registro"><img src="img/logo.png"/></a>                                                                                     
+                                <a class="navbar-brand" href="<?php echo $url?>Ave/registro"><img src="img/logo.png"/></a>                                                                                     
                             </div>
                             <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
                                 <ul class="nav navbar-nav">
                                     <li>
-                                        <a href="http://helpmex.com.mx/Ave/Ave/registro">
+                                        <a href="<?php echo $url?>Ave/registro">
                                             <span class="icon-home"></span> Regresar
                                         </a>
                                     </li>                            
@@ -128,7 +131,7 @@ $_SESSION["idregistro"] = $idreg;
                         </div>  
 
 
-                        <a href="http://helpmex.com.mx/Ave/registro/actualizarFecha?idregistro=<?php echo $idreg ?>" class="btn btn-info">CERRAR</a>
+                        <a href="<?php echo $url?>Ave/registro/actualizarFecha?idregistro=<?php echo $idreg ?>" class="btn btn-info">CERRAR</a>
 
 
 
