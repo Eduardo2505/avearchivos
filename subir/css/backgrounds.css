@@ -3,7 +3,7 @@
 .bg-img-light-rtl{background: url('../img/background/light_rtl.png') left top no-repeat #34A6C8;}
 .bg-img-light{background: url('../img/background/light.png') center top no-repeat #34A6C8;}    
 .bg-img-num0{background: url('../img/background/bt_cubs.png') left top repeat #133959;}
-.bg-img-num1{background: url('../img/background/bg_num1.jpg') left top repeat-x #082648;}    
+.bg-img-num1{background: url('../img/wallpapers/wall_num9.jpg') center top no-repeat fixed #000000;}    
 .bg-img-num2{background: url('../img/background/bg_num2.jpg') left top repeat-x #2D3245;}
 .bg-img-num3{background: url('../img/background/bg_num3.jpg') left top repeat-x #000000;}
 .bg-img-num4{background: url('../img/background/splash_blue.png') center center no-repeat #2C5C82;}
@@ -38,7 +38,7 @@
 .bg-cubs{background: url('../img/background/bt_cubs.png') left top repeat #222;}
 /* eof background images */
 
-/* background colors */
+ background colors 
 .bg-white{background-color: #FFFFFF !important;}
 .bg-lblue{background-color: #34A6C8 !important;}
 .bg-blue{background-color: #2F80A6 !important;}
@@ -46,9 +46,9 @@
 .bg-turquoise{background-color: #40BABD !important;}
 .bg-dark-gray{background-color: #333 !important;}
 .bg-dark-gray_ni{background: #333 !important;}
-/* eof background colors */
+ eof background colors 
 
-/* wallpappers */
+ wallpappers 
 .wall-num1{background: url('../img/wallpapers/wall_num1.jpg') center top no-repeat fixed #000000;}
 .wall-num2{background: url('../img/wallpapers/wall_num2.jpg') center top no-repeat fixed #000000;}
 .wall-num3{background: url('../img/wallpapers/wall_num3.jpg') center top no-repeat fixed #000000;}
@@ -65,9 +65,9 @@
 .wall-num14{background: url('../img/wallpapers/wall_num14.jpg') center top no-repeat fixed #000000;}
 .wall-num15{background: url('../img/wallpapers/wall_num15.jpg') center top no-repeat fixed #000000;}
 .wall-num16{background: url('../img/wallpapers/wall_num16.jpg') center top no-repeat fixed #000000;}
-/* eof wallpappers */
+ eof wallpappers 
 
-/* transparent backgrounds */
+ transparent backgrounds 
 .bg-dot10{background: rgba(0,0,0,0.1);}
 .bg-dot20{background: rgba(0,0,0,0.2);}
 .bg-dot30{background: rgba(0,0,0,0.3);}

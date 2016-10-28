@@ -1,29 +1,29 @@
-@import "bootstrap/bootstrap.min.css";
-@import "jquery/jquery-ui.min.css";
 
 @import "icons/font-awesome.min.css";
 
 @import "mcustomscrollbar/jquery.mCustomScrollbar.css";
 @import "select2/select2.css";
-
+/* entradas de texto */
 @import "shbrush/shCoreDefault.css";
 @import "shbrush/shThemeDefault.css";
-
+@import "bootstrap/bootstrap.min.css";
+@import "jquery/jquery-ui.min.css";
 @import "cleditor/jquery.cleditor.css";
 @import "codemirror/codemirror.css";
 @import "validationengine/validationEngine.css";
-
 @import "fancybox/jquery.fancybox.css";
-
 @import "fullcalendar/fullcalendar.css";
-
 @import "elfinder/elfinder.min.css";
 @import "filetree/jqueryFileTree.css";
-
-@import "stylesheet.css";
-@import "backgrounds.css";
 @import "themes.css";
 @import "mystyles.css";
+@import "stylesheet.css";
+@import "backgrounds.css";
+
+
+
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {    
     

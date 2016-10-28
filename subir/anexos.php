@@ -12,8 +12,8 @@ $idreg = $_GET["idregistro"];
 $op = $_GET["op"];
 $_SESSION["idregistro"] = $idreg;
 
-$url="http://localhost/";
-//$url="http://helpmex.com.mx/";
+//$url="http://localhost/";
+$url="http://helpmex.com.mx/";
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ $url="http://localhost/";
                                     <span class="icon-reorder"></span>                            
                                 </button>        
 
-                                <a class="navbar-brand" href="<?php echo $url?>Ave/solicitudes/mostrar"><img src="img/logo.png"/></a>                                                                                     
+                                <a class="navbar-brand" href="<?php echo $url?>Ave/registro/mostrarsolicitudes"><img src="img/logo.png"/></a>                                                                                     
                             </div>
                             <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
                                 <ul class="nav navbar-nav">
@@ -74,12 +74,12 @@ $url="http://localhost/";
                                     <span class="icon-reorder"></span>                            
                                 </button>        
 
-                                <a class="navbar-brand" href="<?php echo $url?>Ave/registro"><img src="img/logo.png"/></a>                                                                                     
+                                <a class="navbar-brand" href="<?php echo $url?>Ave/registro/mostrarsolicitudes"><img src="img/logo.png"/></a>                                                                                     
                             </div>
                             <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
                                 <ul class="nav navbar-nav">
                                     <li>
-                                        <a href="<?php echo $url?>Ave/registro">
+                                        <a href="<?php echo $url?>Ave/registro/mostrarsolicitudes">
                                             <span class="icon-home"></span> Regresar
                                         </a>
                                     </li>                            
@@ -130,8 +130,8 @@ $url="http://localhost/";
                             <a id="uploadfiles" href="javascript:;" class="btn btn-default">Subir Archivos</a>
                         </div>  
 
-
-                        <a href="<?php echo $url?>Ave/registro/actualizarFecha?idregistro=<?php echo $idreg ?>" class="btn btn-info">CERRAR</a>
+                        <br>  <br>  <br>  <br>
+                      <a href="<?php echo $url?>Ave/registro/actualizarFecha?idregistro=<?php echo $idreg ?>" class="btn btn-info">CERRAR</a> 
 
 
 
